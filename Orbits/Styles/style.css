@@ -1,0 +1,107 @@
+body {
+    background: url('../Images/universe.jpg');
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.earth {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background: url('../Images/earth.jpg');
+    width: 5em;
+    height: 5em;
+    z-index: 1;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -15px -15px 50px 2px #000 inset, 0 0 20px 2px #000;
+    animation: spin .5s linear normal infinite;
+}
+
+.moon {
+    position: absolute;
+    top: 100%;
+    left: -20%;
+    background: url('../Images/moon.gif');
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+}
+
+.sun-image {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background: url('../Images/sun.png');
+    background-size: cover;
+    width: 12em;
+    height: 12em;
+    opacity: 0.6;
+    animation: sun-glow 182s ease-in alternate infinite;
+}
+
+.earth-spin {
+    width: 65%;
+    height: 55%;
+    margin-left: 12%;
+    margin-top: 23%;
+    animation: spin-right 183s linear normal infinite;
+}
+
+.moon-spin {
+    position: fixed;
+    top: 2em;
+    left: 16%;
+    width: 15%;
+    height: 11%;
+    animation: spin-right 16s linear normal infinite;
+}
+
+.commet-out {
+    position: fixed;
+    top: 40%;
+    left: 110%;
+    animation: fly-out 3s ease-in 5s;
+}
+
+.commet-in {
+    position: absolute;
+    top: -20%;
+    left: 30%;
+    animation: fly-in 5s ease-out 80s;
+}
+
+@keyframes spin {
+    100% {
+        background-position: 167%;
+    }
+}
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sun-glow {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes fly-out {
+    100% {
+        left: 60%;
+        top: -20%;
+    }
+}
+
+@keyframes fly-in {
+    100% {
+        left: 0;
+        top: 120%;
+    }
+}

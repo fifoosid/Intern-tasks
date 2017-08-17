@@ -1,0 +1,23 @@
+body {
+    background: url('../Images/universe.jpg');
+    background-size: 450%;
+    /* overflow: hidden; */
+    min-width: 650px;
+}
+
+.earth-spin {
+    width: 140%;
+    height: 140%;
+    margin-left: -14%;
+    margin-top: 55%;
+    animation: spin-right 183s linear normal infinite;
+}
+
+.moon-spin {
+    position: fixed;
+    top: 3em;
+    left: 16%;
+    width: 15%;
+    height: 11%;
+    animation: spin-right 13s linear normal infinite;
+}

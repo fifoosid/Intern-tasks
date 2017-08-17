@@ -1,0 +1,262 @@
+/*
+Format
+Validate ->OK
+Font family duplication ->OK
+Show password button ->OK
+Each selector on new row ->OK
+
+*/
+
+body,
+html {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    color: #494b4f;
+    background: url('../Images/cropped.jpg');
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-form {
+    width: 23em;
+    height: 28.5em;
+    display: inline-block;
+    margin-top: 5em;
+    background-color: rgba(249, 250, 252, 0.92);
+    border-radius: 0.3em;
+    padding: 2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.inputs {
+    width: 100%;
+    font-size: 1em;
+        border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0.8em;
+    line-height: 1.6em;
+}
+
+.forgot-button {
+    text-decoration: none;
+    float: right;
+    color: #0896D8;
+}
+
+.input-field {
+    position: relative;
+    padding: 0.4em;
+    width: 100%;
+}
+
+.show-password {
+    position: absolute;
+    right: 5%;
+    top: 42%;
+    height: 2.5em;
+    line-height: 0em;
+    font-weight: bold;
+    background-color: #F5EFBB;
+    color: #716C31;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.9em;
+}
+
+.control {
+    display: inline-block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.4em;
+    width: 1.4em;
+    background: #e6e6e6;
+    border-radius: 20%;
+}
+
+.control input:checked~.control__indicator {
+    background: #0896D8;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control__indicator:after {
+    display: block;
+}
+
+.control--checkbox .control__indicator:after {
+    left: 0.55em;
+    top: 0.3em;
+    width: 0.2em;
+    height: 0.55em;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.additional-buttons .line-span,
+.forgot-button {
+    font-size: 0.9em;
+}
+
+.additional-buttons {
+    width: 100%;
+    padding: 0.4em;
+}
+
+.sign-in-button {
+    color: white;
+    background-color: #0896D8;
+    height: 3em;
+    border: none;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    width: 100%;
+    font-size: 130%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sign-in-button:hover {
+    background-color: #146991;
+    transition: 0.3s;
+}
+
+.strike {
+    overflow: hidden;
+    padding-bottom: 0.5em;
+}
+
+.strike>.line-span {
+    position: relative;
+    color: #727272;
+}
+
+.strike>.line-span:before,
+.strike>.line-span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #727272;
+}
+
+.strike>.line-span:before {
+    right: 100%;
+    margin-right: 3px;
+}
+
+.strike>.line-span:after {
+    left: 100%;
+    margin-left: 3px;
+}
+
+.social-media {
+    width: 100%;
+    height: 24%;
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fa {
+    position: relative;
+    font-size: 2em;
+    width: 40%;
+    height: 27%;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 0.2em;
+    padding-left: 0.6em;
+    padding-top: 0.3em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+    float: left;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    float: right;
+}
+
+.social-name {
+    margin-top: -18%;
+    margin-left: 25%;
+    font-size: 45%;
+    font-weight: bold;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*Repeating font-family because it doesn't inherit it(WHY?)*/
+}
+
+.reminder {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5em;
+    margin-left: 0.5em;
+    min-width: 8em;
+    height: 4em;
+    line-height: 4em;
+    background-color: #fcd321;
+    border-radius: 0.7em;
+}
+
+.reminder:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0em;
+    top: 3.4em;
+    border: 1em solid;
+    border-color: #fcd321 transparent transparent #fcd321;
+}
+
+.buble-text {
+    font-weight: bold;
+    color: white;
+    font-size: 2.5em;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shell game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="wrapper">
+        <form action="/input.html" class="user-input">
+            <label for="enter-text">Name: </label>
+            <input class="enter-name" type="text" placeholder="Enter your name" />
+            <label for="enter-money">Money: </label>
+            <input class="enter-money" type="number" placeholder="How rich are you ">
+
+            <button class="buttons start-button" type="button">Start game</button>
+        </form>
+
+
+        <section class="shells">
+            <img src="../Images/shell.png" alt="Shell 1" class="shell shell1" data-id="1">
+            <img src="../Images/shell.png" alt="Shell 2" class="shell shell2" data-id="2">
+            <img src="../Images/shell.png" alt="Shell 3" class="shell shell3" data-id="3">
+
+            <img src="../Images/die.png" alt="Die" class="die">
+        </section>
+
+        <section class="message">
+            <header class="message-heading">
+                <h1>
+                    You are about to bet, please enter how much of your money, you would like to bet:
+                    <input type="number" class="bet-input">
+                    <button class=" buttons begin">Shuffle</button>
+                </h1>
+            </header>
+        </section>
+
+        <!-- <section class="ball-input-console">
+            <label for="ball-enter-console">Enter your choice here: </label>
+            <input class="ball-enter-console" type="number">
+            <button class="enter-ball-position buttons">Enter</button>
+        </section> -->
+
+        <section class="playground">
+            <header class="info">
+                <h1 class="show-name">NAME: </h1>
+                <h1 class="show-money">MONEY: </h1>
+                <h1 class="show-current-bet">CURRENT BET: </h1>
+            </header>
+        </section>
+
+        <section class="play-again">
+            <header>
+                <h1>Would you like another round??</h1>
+                <buttons class="buttons yes">Yes</buttons>
+                <buttons class="buttons no">No</buttons>
+            </header>
+        </section>
+
+        <section class="result">
+            
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../Scripts/main.js"></script>
+</body>
+
+</html>

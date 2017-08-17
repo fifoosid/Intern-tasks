@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Here is, here isn't</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="wrapper">
+        <form action="/input.html" class="user-input">
+            <label for="enter-text">Name: </label>
+            <input class="enter-name" type="text" placeholder="Enter your name" />
+            <label for="enter-money">Money: </label>
+            <input class="enter-money" type="number" placeholder="How rich are you ">
+
+            <button class="buttons start-button" type="button">Start game</button>
+        </form>
+
+        <section class="message">
+            <header class="message-heading">
+                <h1>
+                    You are about to bet, please enter how much of your money, you would like to bet:
+                    <input type="number" class="bet-input">
+                    <button class=" buttons begin">Shuffle</button>
+                </h1>
+            </header>
+        </section>
+
+        <section class="ball-input-console">
+            <label for="ball-enter-console">Enter your choice here: </label>
+            <input class="ball-enter-console" type="number">
+            <button class="enter-ball-position buttons">Enter</button>
+        </section>
+
+        <section class="play-again">
+            <header>
+                <h1>Would you like another round??(y/n)</h1>
+                <input class="play-again-input" type="text">
+                <button class="new-game-button buttons">Come on</button>
+            </header>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../Scripts/main.js"></script>
+</body>
+
+</html>

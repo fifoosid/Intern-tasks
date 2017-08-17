@@ -1,0 +1,77 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #74ebd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 500px;
+}
+
+.user-input {
+    min-width: 15em;
+    width: 10em;
+    height: 15em;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 2em;
+    font-weight: bold;
+    background: #CAC531;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F3F9A7, #CAC531);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 2em 2em;
+    padding: 3em 3em;
+    border-radius: 4em;
+}
+
+input[type='text'],
+input[type='number'] {
+    width: 100%;
+}
+
+.buttons {
+    background-color: transparent;
+    color: #c94848;
+    border: solid 3px #c94848;
+    font-weight: bolder;
+    padding: .5em 2em;
+    margin-top: 2em;
+}
+
+.buttons:hover {
+    color: #6b1f1f;
+    border: solid 3px #6b1f1f;
+}
+
+.message {
+    display: none;
+}
+
+.message>.message-heading {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.bet-input {
+    width: 2em;
+}
+
+.ball-input-console,
+.play-again {
+    display: none;
+    width: 50%;
+    min-width: 15em;
+    max-width: 20em;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}

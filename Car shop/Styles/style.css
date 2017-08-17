@@ -1,0 +1,104 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background: #314755;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #26a0da, #314755);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 1150px;
+}
+
+.car {
+    background: url('../Images/IE-white-car-side-view.png') right;
+    width: 250px;
+    height: 200px;
+    position: absolute; 
+    top: 40%; 
+    left: 0; 
+    /* z-index: 1; */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0; 
+}
+
+.price-input,
+.color-input,
+.select-input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.customer-input {
+    padding-top: 5em;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit-button {
+    padding: 1em;
+    margin: 3em;
+    border: none;
+    border-radius: 10em;
+    font-size: 1.4em;
+    color: white;
+    background-color: #00056d;
+    transition: .4s;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #211c1c;
+}
+
+.answer {
+    display: none;
+    margin-left: 3em;
+}
+
+.items {
+    min-width: 9em;
+    min-height: 13em;
+    padding: 0 0.8em;
+    position: fixed;
+    z-index: 2;
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border: 0.3em solid #c6b6b6;
+    border-radius: 1em;
+    line-height: 2em;
+}
+
+.shop-items {
+    top: 10%;
+    left: 8%;
+}
+
+.customer-items {
+    top: 40%;
+    right: 0;
+}
+
+.active {
+    background: url(../Images/unnamed.png) right top no-repeat;
+    padding-right: 30px;
+}

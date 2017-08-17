@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="wrapper">
+
+        <section class="shop-items items">
+            <header>
+                <h2>
+                    In stock:
+                </h2>
+            </header>
+            <span class="shop-list">
+
+            </span>
+            <span>
+                <img src="../Images/unnamed.png" alt="tick">
+                -Available 
+            </span>
+        </section>
+
+        <form class="customer-input">
+            <span>Price: 
+                <input class="price-input" type="number" name="price" placeholder="Enter yor money">
+            </span>
+
+            <span>Color: 
+                <input class="color-input" type="text" name="color" placeholder="Enter the color you want">
+            </span>
+
+            <span>Type:  
+                <select class="select-input">
+                    <option value="" disabled selected hidden>Please Choose...</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Estate">Estate</option>
+                    <option value="SUV">SUV</option>
+                </select>
+            </span>
+            <button class="submit-button" type="button">Buy this car</button>
+        </form>
+
+        <section class="customer-items items">
+            <header>
+                <h1>
+                    You own:
+                </h1>
+            </header>
+            <span class="customer-list">
+
+            </span>
+        </section>
+
+        <section class="answer">
+            <header>
+                <h1>
+                    Here is the what was made:
+                </h1>
+            </header>
+            <p class="output">
+
+            </p>
+        </section>
+        <div class="car"></div>
+        <!-- <img class="car" src="../Images/IE-white-car-side-view.png" alt="background picture"> -->
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../Scripts/script.js"></script>
+</body>
+
+</html>

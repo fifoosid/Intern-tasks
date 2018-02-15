@@ -1,0 +1,31 @@
+#send-configuration {
+    top: 2em;
+}
+
+.menu-container {
+    min-width: 200px;
+}
+
+#menu {
+    min-width: 165px;
+}
+
+main {
+    position: absolute;
+    left: 200px;
+    width: calc(100vw - 200px);
+}
+
+.info-wrapper {
+    width: 8em;
+    height: 9.5em;
+}
+
+.model {
+    width: 6em;
+    height: 6em;
+}
+
+.select {
+    width: 8em;
+}

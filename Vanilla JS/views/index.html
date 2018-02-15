@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Example menu with Vanilla JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../styles/styles.css" media="only screen" rel="stylesheet">
+    <!-- Media Queries -->
+    <link rel="stylesheet" media="only screen and (max-width: 375px)" href="../styles/styles.mobile.css">    
+    <link rel="stylesheet" media="only screen and (max-width: 1000px)" href="../styles/styles.medium.css">    
+    <!-- material design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-container">
+        <div id="menu">
+            <ul class="menu-group">
+            </ul>
+        </div>
+        <div class="menu-hide">
+            <i id="menu-trigger" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="upper-wrapper">
+        <div class="upper-info">
+            <div id="model-select">
+                <p class="header">Workman GTX 4 Passenger Configuration</p>&nbsp;
+                <i class="fa fa-arrow-down fa-arrow " aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div id="slide-in-menu">
+        <dir class="hr"></dir>
+        <div class="slide-menu-header">
+            <span>Choose a model from here:</span>
+        </div>
+        </div>
+    </div>
+
+    <main>
+
+           
+
+        <div class="button-wrapper">
+            <button type="button" id="send-configuration">Email this configuration</button>
+        </div>
+        <div class="wrapper">
+            <div class="main-image image-common"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <span>Copyright@ 2017 The Tor Company. All rights reserved.</span>
+            <br>
+            <span>DMCA/Copyright policy</span>
+        </div>
+        <div class="social">
+            <span>Connect with us: </span>
+            <div class="social-media-buttons">
+                <i class="fa fa-facebook fa-2x fa-hover" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-2x fa-hover" aria-hidden="true"></i>
+                <i class="fa fa-youtube fa-2x fa-hover" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

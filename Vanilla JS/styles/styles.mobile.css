@@ -1,0 +1,19 @@
+.upper-wrapper {
+  height: 50px; }
+
+#slide-in-menu {
+  top: calc(50px - 19em - 1em); }
+
+footer {
+  display: block; }
+
+#send-configuration {
+  top: 4em;
+  right: 0; }
+
+.menu-container {
+  top: 50px; }
+
+main {
+  width: calc(100vw - 200px);
+  top: 50px; }
